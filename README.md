@@ -18,11 +18,11 @@ No matter what your experience level, being an engineer means continuously learn
 ## Examples:
 Take a look at these couple examples that I have in my own portfolio:
 
-**Palettable:** https://github.com/Daniel-Ezekiel/sc-apod
+**SC-APOD:** https://github.com/Daniel-Ezekiel/sc-apod
 
-**Twitter Battle:** https://github.com/daniel-ezekiel/edie-agency-website
+**Edie Agency Site:** https://github.com/daniel-ezekiel/edie-agency-website
 
-**Patch Panel:** https://github.com/daniel-ezekiel/Portfolio
+**Portfolio:** https://github.com/daniel-ezekiel/Portfolio
 
 
 
