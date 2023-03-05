@@ -5,25 +5,25 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-html{
+html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -32,30 +32,31 @@ html{
   font-family: 'Lato', sans-serif;
   font-family: 'Merriweather', serif;
 /*******************************************/
-body *{ 
-  font-family: 'Lato', sans-serif;
+body * {
+  font-family: "Lato", sans-serif;
+  transition: all 0.4s ease-in;
 }
 
 /* MAIN CONTAINER STYLING */
 
-.overlay{
+.overlay {
   padding: 12px;
 }
 
-main{
+main {
   padding: 0;
   background: url(../images/bg-meal2.webp) 50% 50% no-repeat;
   background-size: cover;
   color: rgb(212, 212, 212);
 }
 
-.overlay{
+.overlay {
   padding-bottom: 100px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-header{
+header {
   width: 100%;
   padding: 10px;
 
@@ -64,18 +65,18 @@ header{
   align-items: center;
 }
 
-.cuisine-logo{
+.cuisine-logo {
   max-width: 50%;
 }
 
-div#cuisine-about-box > span > span{
+div#cuisine-about-box > span > span {
   border-top: 2px solid rgb(212, 212, 212);
 }
 
 /*****************
 HAMBURGER STYLING
 ****************/
-.hamburger{
+.hamburger {
   display: block;
   width: 35px;
   height: 35px;
@@ -90,61 +91,59 @@ HAMBURGER STYLING
 
 .menu-bar,
 .hamburger::before,
-.hamburger::after{
-  content: '';
+.hamburger::after {
+  content: "";
   display: block;
 
   margin: 4px;
   padding: 0;
   width: 100%;
   height: 2px;
-  background-color: rgb(10, 200, 201);;
+  background-color: rgb(10, 200, 201);
   transition: all 0.5s ease;
 }
 
-.menu-bar.is-active{
+.menu-bar.is-active {
   opacity: 0;
 }
 
-.hamburger.is-active{
+.hamburger.is-active {
   position: fixed;
   right: 24px;
 }
 
-.hamburger.is-active::before{
+.hamburger.is-active::before {
   transform: rotate(45deg) translate(8.5px);
 }
 
-.hamburger.is-active::after{
+.hamburger.is-active::after {
   transform: rotate(-45deg) translate(8.5px);
 }
 
 /* END OF HAMBURGER STYLING */
-.mobile-nav{
+.mobile-nav {
   background-color: rgba(26, 26, 26, 0.5);
   width: 55vw;
   height: 100vh;
   position: fixed;
   top: 0px;
   right: -100vw;
-  
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  transition: all 0.5s ease-in-out
+  transition: all 0.5s ease-in-out;
 }
 
-.mobile-nav.is-active{
+.mobile-nav.is-active {
   background-color: rgba(26, 26, 26, 0.92);
   width: 55vw;
   height: 100vh;
   position: fixed;
   top: 0px;
   right: 0;
-  
 
   display: flex;
   flex-direction: column;
@@ -154,55 +153,55 @@ HAMBURGER STYLING
   z-index: 9;
 }
 
-.mobile-nav ul{
+.mobile-nav ul {
   list-style-type: none;
-  padding: 0;  
+  padding: 0;
 }
 
-.mobile-nav li{
+.mobile-nav li {
   padding-top: 30px;
 
   font-size: 1.8rem;
 }
 
-li a{  
+li a {
   padding-bottom: 4px;
   color: rgb(233, 233, 233);
 }
 
-li a:hover{
+li a:hover {
   border-bottom: 2px solid rgb(10, 200, 201);
 }
 
 /* END OF NAV STYLING */
 
-section.hero{
+section.hero {
   margin-top: 100px;
 }
 
-.hero h1{  
-  font-family: 'Macondo', cursive;
+.hero h1 {
+  font-family: "Macondo", cursive;
   font-size: 3.5rem;
   font-weight: 900;
 }
 
-h1 span{
+h1 span {
   display: block;
-  font-family: 'Macondo', cursive;
+  font-family: "Macondo", cursive;
 }
 
-.hero p{
+.hero p {
   margin-top: 15px;
 
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
-.hero p span{
+.hero p span {
   display: block;
 }
 
-input{
+input {
   display: inline-block;
   margin: 0;
   padding: 10px 12px;
@@ -210,103 +209,102 @@ input{
   font-size: 1.4rem;
 }
 
-select{
+select {
   display: inline-block;
   padding: 9.5px 5px;
 
   font-size: 1.4rem;
 }
 
-.social-links-box{
+.social-links-box {
   margin-top: 15px;
 
   font-size: 1.5rem;
 }
 
-.social-links-box span{
+.social-links-box span {
   display: inline-block;
   padding-right: 25px;
 }
 
 /* ALL CONTAINERS STYLE */
 /* .hero, */
-.overlay{
+.overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* ABOUT US CONTAINER */
-.about-us-container .overlay{
-  background: linear-gradient(rgb(83, 83, 83), rgb(18, 18, 18) );
+.about-us-container .overlay {
+  background: linear-gradient(rgb(83, 83, 83), rgb(18, 18, 18));
   padding: 85px 12px;
   color: rgb(212, 212, 212);
 }
 
-.about-us-container p{
+.about-us-container p {
   text-align: center;
 }
 
-section h2{
+section h2 {
   margin: 0;
 
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
 }
 
-section h3{
+section h3 {
   font-size: 2rem;
   font-family: "Merriweather", sans-serif;
   color: rgb(255, 255, 255);
-  text-align: center;;
+  text-align: center;
 }
 
-.about-us-container p{
+.about-us-container p {
   padding: 5px;
-  margin-bottom:35px;
+  margin-bottom: 35px;
 
   line-height: 1.5;
   font-size: 1.4rem;
 }
 
-.about-us-container p > span{
+.about-us-container p > span {
   display: block;
   margin-top: 30px;
 }
 
-.about-us-container a{
+.about-us-container a {
   padding: 15px 15px;
   background-color: rgb(252, 252, 252);
   border-radius: 5px;
 
-  color:rgb(49, 49, 49);
+  color: rgb(49, 49, 49);
 }
 
-.about-us-container a:hover{
+.about-us-container a:hover {
   background-color: rgb(9, 174, 174);
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3)
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-.about-us-container div span{
+.about-us-container div span {
   display: inline-block;
   padding-right: 5px;
 
   font-size: 1.4rem;
 }
 
-
 /* RESTAURANT MENU CONTAINER */
-.cuisine-menu-container{
+.cuisine-menu-container {
   background: url(../images/bg-meal4.webp) 50% 50% no-repeat;
   background-size: cover;
 }
 
-.cuisine-menu-container .overlay{
+.cuisine-menu-container .overlay {
   padding: 100px 12px;
   color: #fff;
 }
 
-.cuisine-menu-container ul{
+.cuisine-menu-container ul {
   list-style-type: none;
   padding: 0;
   padding-bottom: 5px;
@@ -317,18 +315,18 @@ section h3{
   align-items: center;
 }
 
-.cuisine-menu-container ul li{
+.cuisine-menu-container ul li {
   min-width: 60px;
 
   font-size: 1.3rem;
   text-align: center;
 }
 
-li > a{
+li > a {
   text-decoration: none;
 }
 
-.menu-catalog-box{
+.menu-catalog-box {
   margin: 15px;
 
   display: flex;
@@ -336,7 +334,7 @@ li > a{
   justify-content: space-around;
 }
 
-.menu-catalog-box > div{
+.menu-catalog-box > div {
   /* border: 1px solid rgb(246, 245, 245); */
   border-radius: 0 25px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
@@ -346,7 +344,7 @@ li > a{
   margin-bottom: 15px;
 }
 
-.meal-box{
+.meal-box {
   opacity: 0;
   padding: 60px 15px;
   border-radius: 0 25px;
@@ -355,88 +353,88 @@ li > a{
 
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
-.meal-box:hover{
+.meal-box:hover {
   opacity: 1;
   background-color: rgba(26, 26, 26, 0.7);
 
   transition: all 0.5s ease;
 }
 
-.meal1{
+.meal1 {
   background: url(../images/menu-meal1.webp) 50% 50% no-repeat;
   background-size: cover;
 }
 
-.meal2{
+.meal2 {
   background: url(../images/menu-meal2.webp) 50% 50% no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
-.meal3{
+.meal3 {
   background: url(../images/menu-meal3.webp) 50% 50% no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
-.meal4{
+.meal4 {
   background: url(../images/menu-meal4.webp) 50% 50% no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
-.meal5{
+.meal5 {
   background: url(../images/menu-meal5.webp) 50% 50% no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
-.meal6{
+.meal6 {
   background: url(../images/menu-meal6.webp) 50% 50% no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
-.meal7{
+.meal7 {
   background: url(../images/menu-meal7.webp) 50% 50% no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
-.meal8{
+.meal8 {
   background: url(../images/menu-meal8.webp) 50% 50% no-repeat;
-  background-size: cover;  
+  background-size: cover;
 }
 
-.meal-box span{
+.meal-box span {
   line-height: 2;
 
   font-size: 1.8rem;
 }
 
 /* OPENING HOURS CONTAINER */
-.order-booking-container{
+.order-booking-container {
   background: url(../images/bg-meal7.webp) 50% 50% no-repeat;
   background-size: cover;
 }
 
-.order-booking-container > .overlay{
+.order-booking-container > .overlay {
   padding: 100px 12px;
 
   color: #fff;
 }
 
-.opening-periods-container{
+.opening-periods-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.order-booking-container span > i{
+.order-booking-container span > i {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
   padding: 7px;
   font-size: 1.7rem;
 }
 
-.overlay img{
+.overlay img {
   margin-top: 25px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -444,42 +442,42 @@ li > a{
   width: 95%;
 }
 
-h5{
+h5 {
   font-size: 1.3rem;
 }
 
-h5 + span{
+h5 + span {
   font-size: 1.4rem;
 }
 
 /* TESTIMONIALS SECTION STYLING */
 
-.testimonials-container .overlay{
+.testimonials-container .overlay {
   padding-top: 100px;
-  background: linear-gradient(rgb(35, 33, 33), rgb(47, 47, 47) );
-  color:rgb(212, 212, 212);
+  background: linear-gradient(rgb(35, 33, 33), rgb(47, 47, 47));
+  color: rgb(212, 212, 212);
 }
 
-.testimonials-container img{
+.testimonials-container img {
   margin-bottom: 15px;
   border-radius: 50%;
   width: 100px;
 }
 
-.testimonials-container span{
+.testimonials-container span {
   font-size: 1.5rem;
   line-height: 1.5;
 }
 
-.customer-name{
+.customer-name {
   font-weight: 600;
 }
 
-span.customer-job-title{
+span.customer-job-title {
   font-size: 1.3rem;
 }
 
-.testimonials-container p{
+.testimonials-container p {
   width: 80%;
 
   font-size: 1.2rem;
@@ -487,9 +485,8 @@ span.customer-job-title{
   line-height: 1.5;
 }
 
-
 /* FOOTER STYLING */
-footer{
+footer {
   padding: 50px 12px;
   padding-bottom: 15px;
   background-color: #000;
@@ -497,66 +494,66 @@ footer{
   color: rgb(217, 214, 214);
 }
 
-footer h3{
+footer h3 {
   text-align: left;
 }
 
-.footer-main-content{
+.footer-main-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.footer-main-content > *{
+.footer-main-content > * {
   margin: 10px 0;
   max-width: 50%;
 }
 
-.cuisine-about-box > *{
+.cuisine-about-box > * {
   font-size: 1.3rem;
 }
 
-.cuisine-about-box p{
+.cuisine-about-box p {
   margin-top: 18px;
   line-height: 1.5;
 }
 
-#cuisine-about-box > span{
+#cuisine-about-box > span {
   width: 150px;
 }
-#cuisine-about-box > span + p{
+#cuisine-about-box > span + p {
   font-size: 1.3rem;
 }
 
 #cuisine-about-box > span,
-#cuisine-about-box > span > span{
+#cuisine-about-box > span > span {
   display: inline-block;
 
-  font-family: 'Macondo', cursive;
+  font-family: "Macondo", cursive;
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1;
   color: rgb(10, 200, 201);
 }
 
-#cuisine-about-box > span > span{
+#cuisine-about-box > span > span {
   display: inline-block;
   border-top: 2px solid rgb(10, 200, 201);
   padding-left: 40px;
 }
 
-.footer-main-content > div > span{
+.footer-main-content > div > span {
   display: block;
 
   font-size: 1.2rem;
   line-height: 1.7;
 }
 
-.footer-sm-box a{
+.footer-sm-box a {
   text-decoration: none;
 }
 
-.footer-sm-box span{
+.footer-sm-box span {
   display: inline-block;
   border: 1px solid rgb(236, 236, 236);
   width: 30px;
@@ -567,66 +564,66 @@ footer h3{
   text-align: center;
 }
 
-footer a{
-  color:rgb(217, 214, 214);
+footer a {
+  color: rgb(217, 214, 214);
   text-decoration: none;
 }
 
-footer a:hover{
-  color:rgb(10, 200, 201);
+footer a:hover {
+  color: rgb(10, 200, 201);
 }
 
-footer > p{
+footer > p {
   text-align: center;
 }
 
-footer p a{
-  color:rgb(10, 200, 201)
+footer p a {
+  color: rgb(10, 200, 201);
 }
 
-footer p a:hover{
+footer p a:hover {
   border-bottom: 2px solid rgb(10, 200, 201);
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media screen and (min-width: 650px){
-  .hero{
-    padding-left: 25px; 
+@media screen and (min-width: 650px) {
+  .hero {
+    padding-left: 25px;
     align-self: flex-start;
   }
 
-  .about-us-container .overlay{
+  .about-us-container .overlay {
     padding-left: 25%;
     padding-right: 25%;
   }
 
-  .menu-catalog-box{
+  .menu-catalog-box {
     justify-content: space-evenly;
   }
 
-  .menu-catalog-box > div{
+  .menu-catalog-box > div {
     min-width: 30%;
     max-width: 30%;
     margin-bottom: 15px;
   }
 
-  .meal-box{    
+  .meal-box {
     padding-top: 115px;
     padding-bottom: 115px;
   }
 
-  .order-booking-container img{
+  .order-booking-container img {
     width: 600px;
   }
 
-  .testimonials-container > .overlay{
+  .testimonials-container > .overlay {
     padding-left: 25%;
     padding-right: 25%;
   }
-  
-  .footer-main-content{
+
+  .footer-main-content {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -635,61 +632,61 @@ footer p a:hover{
     padding-bottom: 70px;
   }
 
-  #cuisine-about-box{
+  #cuisine-about-box {
     width: 25%;
   }
 
-  span + p{
+  span + p {
     line-height: 1.5;
   }
 
-  .contact-us > span{
+  .contact-us > span {
     line-height: 2;
   }
 
-  .contact-us span > span{
+  .contact-us span > span {
     font-weight: 600;
-    color:rgb(10, 200, 201)
+    color: rgb(10, 200, 201);
   }
 }
 
-@media screen and (min-width: 1024px){
-  main > .overlay{
+@media screen and (min-width: 1024px) {
+  main > .overlay {
     padding-left: 5%;
     padding-right: 5%;
   }
 
-  .menu-catalog-box > div{
+  .menu-catalog-box > div {
     min-width: 22%;
     max-width: 25%;
     margin-bottom: 15px;
   }
 }
 
-@media screen and (min-width: 1280px){
-  header{
+@media screen and (min-width: 1280px) {
+  header {
     padding-top: 15px;
 
     display: flex;
     justify-content: space-between;
   }
 
-  .hamburger{
+  .hamburger {
     display: none;
   }
 
-  .mobile-nav{
+  .mobile-nav {
     display: contents;
   }
 
-  .mobile-nav ul{
+  .mobile-nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
 
-  .mobile-nav ul li{
+  .mobile-nav ul li {
     width: 18%;
     padding: 15px;
     border-radius: 10px;
@@ -699,36 +696,36 @@ footer p a:hover{
     text-align: center;
   }
 
-  .hero{
+  .hero {
     padding-left: 18%;
   }
 
-  .hero h1{
+  .hero h1 {
     font-size: 4.5rem;
   }
 
-  .hero p{
+  .hero p {
     font-size: 2rem;
   }
 
   .hero input,
-  .hero select{
+  .hero select {
     font-size: 1.7rem;
   }
 
-  .hero div > span{
+  .hero div > span {
     font-size: 1.6rem;
   }
 
-  section h2{
+  section h2 {
     font-size: 1.8rem;
   }
 
-  .overlay h3{
+  .overlay h3 {
     font-size: 3.7rem;
   }
 
-  .cuisine-menu-container .overlay{
+  .cuisine-menu-container .overlay {
     padding-bottom: 200px;
   }
 
@@ -738,67 +735,67 @@ footer p a:hover{
     line-height: 1.7;
   }
 
-  .overlay div > a{
+  .overlay div > a {
     font-size: 1.7rem;
   }
 
-  .overlay ul{
+  .overlay ul {
     width: 60%;
     margin-bottom: 50px;
   }
 
-  .overlay ul li{
+  .overlay ul li {
     font-size: 1.7rem;
   }
 
-  .order-booking-container h5{
+  .order-booking-container h5 {
     font-size: 1.9rem;
   }
 
-  .order-booking-container span > i{
+  .order-booking-container span > i {
     padding: 15px;
     font-size: 2.5rem;
   }
 
-  .order-booking-container span{
+  .order-booking-container span {
     font-size: 1.8rem;
   }
 
-  .order-booking-container img{
+  .order-booking-container img {
     width: 800px;
   }
 
-  .order-booking-container .overlay{
+  .order-booking-container .overlay {
     padding-top: 125px;
     padding-bottom: 200px;
   }
 
-  .testimonials-container .customer-name{
+  .testimonials-container .customer-name {
     font-size: 2rem;
   }
 
   .testimonials-container .customer-job-title,
-  .testimonials-container .customer-job-title + span{
+  .testimonials-container .customer-job-title + span {
     font-size: 1.7rem;
   }
 
-  .testimonials-container p{
+  .testimonials-container p {
     font-size: 1.7rem;
   }
 
   #cuisine-about-box span,
-  #cuisine-about-box span > span{
+  #cuisine-about-box span > span {
     font-size: 3rem;
     line-height: 1.3;
   }
 
   footer #cuisine-about-box p,
   footer .open-hours span,
-  footer .contact-us span{
-    font-size: 1.6rem
+  footer .contact-us span {
+    font-size: 1.6rem;
   }
 
-  footer p{
+  footer p {
     font-size: 1.3rem;
   }
 }
